@@ -91,11 +91,11 @@ class run(object):
 				script="radical_pilot_delta_abyss.py"
 		if self.env=="openstack":
 			if self.assembler=="Ray":
-				script="radical_pilot_delta_os.py"
+				script="radical_pilot_os_ray.py"
 			if self.assembler=="contrail":
-				script="radical_pilot_delta_os.py"
+				script="radical_pilot_os_contrail.py"
 			if self.assembler=="Abyss":
-				script="radical_pilot_delta_os.py"
+				script="radical_pilot_os_abyss.py"
 		rnn_option=None
 		length=None
 		for item in self.kmer_lngth:
@@ -123,7 +123,7 @@ class run(object):
 		if self.env=="delta":
 			script="radical_pilot_delta_pp.py"
 		if self.env=="openstack":
-				script="radical_pilot_delta_pp.py"
+				script="radical_pilot_os_pp.py"
 		rnn_option=None
 		length=None
 		kmer=None
