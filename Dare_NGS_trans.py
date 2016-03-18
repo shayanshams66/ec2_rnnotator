@@ -3,10 +3,10 @@ import logging
 import os
 class run(object):
 	def __init__(self):
-	self.parser()
-	self.log_editor()
-	logging.warning('starting Dare_NGS_Trans')
-	self.run_preprocess()
+		self.parser()
+		self.log_editor()
+		logging.warning('starting Dare_NGS_Trans')
+		self.run_preprocess()
 
 	def log_editor(self):
 		logging.basicConfig(filename='Dare_NGS_Trans.log',format='%(asctime)s %(message)s')
